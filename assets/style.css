@@ -1,0 +1,530 @@
+/*GLOBAL*/
+body{
+	font-family: Red Hat Display !important;
+	padding-top: 96px;
+	background: #F6F6F6;
+}
+/*NAVBAR*/
+.navbar-custom{
+    background-color: #FF6262 !important;
+    font-size: 15px;
+    height: 96px !important;
+    color: #FFFFFF !important;
+ }
+.navbar-custom .nav-item .nav-link{
+	color: #FFFFFF !important;
+}
+.navbar-custom .navbar-brand img{
+	max-width: 130px;
+}
+.navbar-custom .navbar-nav li {
+	padding: 7px;
+	font-weight: 500 !important;
+}
+.navbar-custom .navbar-nav .nav-item .drowdown-item {
+	color: black !important;
+}
+@media (max-width: 1000px) {
+	.navbar-custom{
+		height: auto !important;
+	}
+	.navbar-custom .navbar-nav li {
+	padding: 5px;
+}
+}
+/*Beranda*/
+#beranda{
+	padding-top: 28px;
+	padding-bottom: 70px;
+}
+#beranda .berita-hiv-slider {
+	background: #FFFFFF;
+	border-radius: 8px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+	overflow: hidden;
+}
+#beranda .berita-hiv-slide{
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(320px, 43%);
+	min-height: 430px;
+	background: #FFFFFF;
+}
+#beranda .berita-hiv-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 54px 64px;
+}
+#beranda .berita-hiv-content span{
+	width: fit-content;
+	border-radius: 999px;
+	background: #FFE6E6;
+	color: #B91919;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0;
+	padding: 7px 14px;
+	margin-bottom: 16px;
+}
+#beranda .berita-hiv-content h1 {
+	font-size: 42px;
+	line-height: 1.18;
+	color: #1F2328;
+	margin-bottom: 16px;
+}
+#beranda .berita-hiv-content p{
+	color: #4E5968;
+	font-size: 17px;
+	line-height: 1.65;
+	margin-bottom: 24px;
+	max-width: 650px;
+}
+#beranda .berita-hiv-actions{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+#beranda .berita-hiv-actions .btn{
+	border-radius: 6px;
+	font-weight: 700;
+	padding: 10px 18px;
+}
+#beranda .berita-hiv-actions small{
+	color: #6B7280;
+	font-weight: 600;
+}
+#beranda .berita-hiv-image{
+	height: 430px;
+	min-height: 0;
+	background: #EFEFEF;
+}
+#beranda .berita-hiv-image img{
+	width: 100%;
+	height: 430px;
+	min-height: 0;
+	object-fit: cover;
+	display: block;
+}
+#beranda .carousel-indicators{
+	margin-bottom: 14px;
+}
+#beranda .carousel-indicators [data-bs-target]{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #DB0202;
+}
+#beranda .carousel-control-prev,
+#beranda .carousel-control-next{
+	width: 48px;
+}
+#beranda .berita-hiv-empty{
+	border-radius: 8px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+	overflow: hidden;
+}
+.modal-berita-hiv .modal-title{
+	font-size: 26px;
+	color: #B91919;
+}
+.modal-berita-hiv .modal-body img{
+	width: 100%;
+	max-height: 380px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 16px;
+}
+.modal-berita-hiv .modal-body small{
+	display: block;
+	color: #6B7280;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+.modal-berita-hiv .modal-body p{
+	font-size: 16px;
+	line-height: 1.75;
+	color: #2F3742;
+	text-align: left;
+}
+.modal-berita-hiv .modal-body .lead{
+	font-size: 18px;
+	font-weight: 600;
+	color: #1F2328;
+}
+@media (max-width: 1000px) {
+	#beranda{
+		padding-top: 18px;
+		padding-bottom: 50px;
+	}
+	#beranda .berita-hiv-slide{
+		grid-template-columns: 1fr;
+		min-height: auto;
+	}
+	#beranda .berita-hiv-content{
+		order: 2;
+		padding: 28px 22px 54px;
+	}
+	#beranda .berita-hiv-content h1 {
+		font-size: 30px;
+		line-height: 1.24;
+	}
+	#beranda .berita-hiv-content p{
+		font-size: 15px;
+		line-height: 1.65;
+	}
+	#beranda .berita-hiv-image{
+		order: 1;
+		height: 230px;
+		min-height: 0;
+	}
+	#beranda .berita-hiv-image img{
+		height: 230px;
+		min-height: 0;
+		max-height: none;
+	}
+	#beranda .carousel-control-prev,
+	#beranda .carousel-control-next{
+		width: 40px;
+		top: 96px;
+		bottom: auto;
+	}
+}
+/*edukasi penyakit*/
+#edukasi-penyakit{
+	padding-bottom: 60px;
+	text-align: center;
+}
+#edukasi-penyakit h1
+{
+	font-size: 32px;
+	color: #B91919;
+	padding-bottom: 25px;
+	text-align: center;
+}
+#edukasi-penyakit .col-education
+{
+	width: 100%;
+	overflow-x: auto;
+	max-height: 500px;
+}
+
+#edukasi-penyakit .col-education .card
+{
+	margin-bottom: 10px !important;
+}
+
+/*KONSULTASI ONLINE*/
+#konsultasi-online{
+	padding-bottom: 80px;
+}
+#konsultasi-online h1
+{
+	font-size: 32px;
+	color: #B91919;
+	padding-bottom: 20px;
+	text-align: center;
+}
+#konsultasi-online .row-custom{
+	overflow-y: auto;
+	max-height: 450px;
+	width: auto;
+	margin: auto;
+}
+#konsultasi-online .col-custom{
+	padding: 2px;
+	margin-top: 10px;
+	background: #FFFFFF;
+}
+#konsultasi-online .wrap-img{
+	position: relative;
+}
+#konsultasi-online .wrap-img img{
+	width: 100%;
+	height: 300px;
+	margin: auto;
+}
+#konsultasi-online .wrap-img button{
+	position: absolute;
+	top: 3%;
+	left:2%;
+	font-size: 13px;
+	font-weight: 500;
+}
+#konsultasi-online .wrap-txt{
+	padding: 2px;
+	margin: 0;
+}
+#konsultasi-online .wrap-txt h5{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+}
+#konsultasi-online .wrap-txt p{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+}
+#konsultasi-online .wrap-txt button{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 5px;
+  	margin-bottom: 5px;
+	font-size: 13px;
+	font-weight: 500;
+}
+@media (max-width: 768px) {
+	#konsultasi-online .row-custom{
+		margin: auto;
+	}
+}
+@media (max-width:468px) {
+	#konsultasi-online .wrap-img img{
+	height :200px;
+}
+}
+/*Tentang Kami*/
+#tentang-kami {
+	padding-bottom: 70px;
+}
+#tentang-kami h1
+{
+	font-size: 32px;
+	color: #B91919;
+	padding-bottom:0;
+}
+#tentang-kami h3
+{
+	font-size: 25px;
+	font-weight: 400;
+	color: #B91919;
+	padding-bottom: 20px;
+}
+#tentang-kami p{
+	text-align: justify;
+	font-size: 14px;
+	font-weight: 400;
+}
+#tentang-kami .img-left{
+	width: 100%;
+	box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+}
+#tentang-kami .img-left img{
+	padding: 10px;
+	width: 100%;
+}
+#tentang-kami .wrap-right{
+	margin: auto;
+}
+#tentang-kami .wrap-right .medsos img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#tentang-kami .wrap-right .medsos p {
+	font-size: 14px;
+	font-weight: 600;
+	color: #B91919;
+}
+@media (max-width: 768px) {
+	#tentang-kami h1
+		{
+			font-size: 32px;
+			color: #B91919;
+			padding-top: 10px;
+			padding-bottom:0;
+			text-align: center;
+		}
+	#tentang-kami h3
+		{
+			font-size: 25px;
+			font-weight: 400;
+			color: #B91919;
+			padding-bottom: 20px;
+			text-align: center;
+		}
+	#tentang-kami .wrap-right .medsos img {
+		margin-left: 5px;
+		margin-right: 5px;
+		max-width: 70px;
+	}
+}
+/*MEDIA PEMBELAJARAN*/
+#pembelajaran{
+	padding-bottom: 70px;
+}
+#pembelajaran h1
+{
+	font-size: 32px;
+	color: #B91919;
+	padding-bottom: 20px;
+	text-align: center;
+}
+#pembelajaran .accordion-custom
+{
+	padding: 0 !important;
+	margin :0 !important;
+}
+#pembelajaran .card
+{
+	margin-bottom: 10px !important;
+	overflow-x: auto;
+	max-height: 350px;
+}
+#modalPembelajaran p{
+	text-align: justify;
+}
+/*BERITA*/
+#berita{
+	padding-bottom: 70px;
+}
+#berita h1
+{
+	font-size: 32px;
+	color: #B91919;
+	padding-bottom: 20px;
+	text-align: center;
+}
+#berita .col-video{
+	position: relative;
+    background: #000;
+}
+#berita blockquote{
+    width: 100%;
+    height: 100%;
+}
+#berita .berita-video {
+	overflow-x: auto;
+	max-height: 500px;
+}
+/*FOOTER*/
+.footer{
+	padding-top: 20px !important;
+	margin: 0;
+}
+.footer img{
+	max-width: 150px;
+}
+.footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/*MODAL SCREENING PENYAKIT*/
+.modal-skrening-penyakit img{
+	width: 100%;
+}
+.modal-skrening-penyakit h2{
+	font-size: 20px;
+	color: #B91919;
+}
+.modal-skrening-penyakit h1{
+	font-size: 25px;
+	color: #B91919;
+}
+#modalRegister .modal-content{
+	border-radius: 8px;
+	overflow: hidden;
+}
+#modalRegister .modal-header,
+#modalRegister .modal-body,
+#modalRegister .modal-footer{
+	padding-left: 24px;
+	padding-right: 24px;
+}
+#modalRegister .modal-title{
+	font-size: 28px;
+	line-height: 1.2;
+}
+#modalRegister form label{
+	font-weight: 600;
+	color: #252A31;
+}
+.register-status-help{
+	margin: 4px 0 12px;
+	color: #5E6673;
+	font-size: 14px;
+	line-height: 1.45;
+}
+.register-status-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	gap: 10px;
+}
+.register-status-card{
+	position: relative;
+	display: block;
+	min-height: 100%;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.register-status-input{
+	position: absolute;
+	top: 16px;
+	left: 14px;
+	margin: 0;
+	accent-color: #B91919;
+	z-index: 1;
+}
+.register-status-content{
+	display: block;
+	min-height: 96px;
+	padding: 13px 14px 13px 42px;
+	border: 1px solid #DEE2E6;
+	border-radius: 8px;
+	background: #FFFFFF;
+	transition: border-color .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+.register-status-card:hover .register-status-content{
+	border-color: #D94B4B;
+}
+.register-status-input:checked + .register-status-content{
+	border-color: #B91919;
+	background: #FFF3F3;
+	box-shadow: 0 0 0 3px rgba(185, 25, 25, .12);
+}
+.register-status-content strong{
+	display: block;
+	color: #1F2328;
+	font-size: 15px;
+	line-height: 1.3;
+}
+.register-status-content small{
+	display: block;
+	margin-top: 4px;
+	color: #5E6673;
+	font-size: 13px;
+	line-height: 1.45;
+}
+@media (max-width: 768px) {
+	#modalRegister .modal-dialog{
+		margin: 10px;
+	}
+	#modalRegister .modal-header,
+	#modalRegister .modal-body,
+	#modalRegister .modal-footer{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	#modalRegister .modal-title{
+		font-size: 24px;
+	}
+	.register-status-grid{
+		grid-template-columns: 1fr;
+		gap: 8px;
+	}
+	.register-status-content{
+		min-height: 0;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}

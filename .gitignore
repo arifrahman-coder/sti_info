@@ -1,0 +1,19 @@
+# Local system and environment files
+.DS_Store
+.env
+.env.*
+!.env.example
+/application/config/external_services.local.php
+
+# Generated temporary files and duplicate asset archive
+/tmp/
+/assets.zip
+
+# Database dump containing account and respondent data
+/db/db_stiinfo.sql
+
+# Runtime cache and logs
+/application/cache/*
+!/application/cache/index.html
+/application/logs/*
+!/application/logs/index.html
